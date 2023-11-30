@@ -67,16 +67,13 @@
 
    tg.expand(); //расширяем на все окно  
 
-   tg.MainButton.text = "Текст кнопки"; //изменяем текст кнопки 
-   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
-   tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
+   tg.MainButton.text = "Записаться на бесплатную диагностику"; //изменяем текст кнопки 
    tg.MainButton.show()
 
 
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.sendData("some string that we need to send"); 
+      tg.sendData("GO"); 
       //при клике на основную кнопку отправляем данные в строковом виде
    });
 
