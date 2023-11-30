@@ -1,1 +1,11 @@
 <html>текст</html>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script> 
+let tg = window.Telegram.WebApp;
+tg.MainButton.text = "Записаться на бесплатную диагностику";
+tg.MainButton.show()
+
+Telegram.WebApp.onEvent('mainButtonClicked', function(){      
+tg.sendData("GO"); });
+tg.close();
+</script>
